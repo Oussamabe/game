@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Baseball 9 Gems!</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          class="col-xl-4 col-lg-4 col-md-6 col-sm-8 col-xs-10 col-10 text-center"
+        >
+          <img class="img-fluid logo" src="img/logo.png" />
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div
+          class="col-xl-8 col-lg-9 col-md-10 col-sm-10 col-xs-11 col-11 text-center hack"
+        >
+          <h4 class="hack-header">Baseball 9 Gems FOR FREE!</h4>
+
+          <h5 class="status-header">
+            <strong>Baseball 9 Status: </strong
+            ><font color="green">Online</font>
+          </h5>
+
+          <p class="beg">
+            <strong>Step 1: </strong>Type in your Username/Display Name
+          </p>
+
+          <input
+            type="text"
+            class="form-control beg"
+            id="username"
+            placeholder="Your Username/Display Name"
+          />
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+              <p class="beg">
+                <strong>Step 2: </strong>Are you on an Apple or Android?
+              </p>
+
+              <div class="row justify-content-center beg">
+                <div
+                  class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4 col-4 text-center"
+                >
+                  <i
+                    class="fab fa-android"
+                    onclick="set_platform('android');"
+                  ></i>
+                </div>
+
+                <div
+                  class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col-xs-4 col-4 text-center"
+                >
+                  <i class="fab fa-apple" onclick="set_platform('apple');"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+              <p class="beg">
+                <strong>Step 3: </strong>What <strong>amount</strong> do you
+                want?
+              </p>
+
+              <select class="form-control form-control-lg i-gems beg" id="gems">
+                <option>100 Gems</option>
+                <option>250 Gems</option>
+                <option>500 Gems</option>
+                <option>1,000 Gems</option>
+                <option>2,500 Gems</option>
+                <option>5,000 Gems</option>
+                <option>10,000 Gems</option>
+              </select>
+            </div>
+          </div>
+
+          <button
+            type="button"
+            class="btn btn-light btn-block btn-lg btn-c beg"
+            onclick="ccc();"
+          >
+            CONTINUE
+          </button>
+
+          <div class="row justify-content-center align-items-center">
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+              <h2 class="f-username"></h2>
+
+              <div class="row justify-content-center ehh">
+                <div class="col-6">
+                  <img class="final-img" src="img/gems.png" />
+                  <h3 class="r1r1"></h3>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-xs-12 col-12">
+              <h4 class="hack-generator end"></h4>
+
+              <button
+                type="button"
+                class="btn btn-light btn-block btn-lg btn-c btn-l h-v"
+                onclick="location='https://www.locked2.com/cl.php?id=bba010e50e4fe5873c202d0ba162dfdc'"
+              >
+                VERIFY NOW!
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-xl-8 col-lg-9 col-md-10 col-sm-10 col-xs-11 col-11 text-center recent"
+        >
+          <h4 class="recent-header"></h4>
+        </div>
+      </div>
+      <center>
+        <font color="white" size="1px"
+          >You agree to our
+          <a href="https://gsagen.com/tos.html">Terms of Service</a> by using
+          our website.</font
+        >
+      </center>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
