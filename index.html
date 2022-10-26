@@ -80,14 +80,14 @@
 					<h3>Search our library</h3>
 					<div class="input-icon-wrapper">
 						<span class="lnr lnr-magnifier"></span>
-						<input type="text" class="quicksearch input-style" placeholder="Your search term..." />
+						<input id="myInput" type="text" class="quicksearch input-style" placeholder="Your search term..." />
 					</div>	
 				</div>
 
              
                   </div>
 
-                  <div class="container">
+                  <div class="container" id="myDIV">
                     <div class="row">
                       <div class="col-lg-6 col-6">
                                  <div class="app-section-content">
@@ -121,7 +121,7 @@
 					<div class="app-item">
 						<div class="app-item-content">
 							<img src="img/app-icons/baseball9.png" class="app-icon-img img-fluid" />
-							<div class="app-title">Baseball 9</div>
+							<div class="app-title">subeway1</div>
 							<div class="app-link-wrapper">
 								<a href="baseball9.html"><span class="lnr lnr-download"></span>Install</a>
 							</div>
@@ -185,4 +185,15 @@
 
   </body>
 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ <script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myDIV .app-item").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
 </html>
