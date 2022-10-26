@@ -351,7 +351,7 @@ footer {
 @media screen and (max-width: 500px) {
   .app-item {
     padding: 7px;
-    width: 50%;
+    width: 100%;
   }
   .header-content,
   .footer-content {
@@ -364,7 +364,7 @@ footer {
     font-size: 3.2em;
   }
   .app-item img {
-    max-width: 70%;
+    /* max-width: 70%; */
     display: table;
     margin: 0 auto;
   }
